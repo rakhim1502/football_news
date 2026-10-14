@@ -1,0 +1,6 @@
+{
+  "name": "Futbol Yangiliklari Telegram Boti",
+  "description": "O‘zbek tilidagi futbol yangiliklari Telegram boti uchun to‘liq loyiha arxitekturasi va simulyatori.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

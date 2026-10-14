@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  football-bot:
+    build: .
+    container_name: football_news_bot
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

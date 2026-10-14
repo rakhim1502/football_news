@@ -1,0 +1,15 @@
+[Unit]
+Description=Futbol Yangiliklari Telegram Boti
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/football-news-bot
+ExecStart=/opt/football-news-bot/.venv/bin/python -m app.main
+Restart=always
+RestartSec=10
+EnvironmentFile=/opt/football-news-bot/.env
+
+[Install]
+WantedBy=multi-user.target
